@@ -1,0 +1,455 @@
+:root {
+    --white: #ffffff;
+    --dark0: #000000;
+    --dark1: #0e252b;
+    --dark2: #556a62;
+    --dark3: #7c8c94;
+    --dark4: #89a7b1;
+    --dark5: #cdbad5;
+    --dark6: #091a1d;
+    --cyan1: #60afff;
+    --blue: #527b91;
+    --gold: #e1c122;
+    --gold1: #f8e37b;
+    --gold2: #e1c12238;
+}
+
+#projects {
+    height: 100vh;
+    width: 100%;
+    background: var(--dark0);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.projects h2 {
+    margin: 3rem;
+    padding: 1rem;
+
+    font-size: 3rem;
+
+    color: var(--white);
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.projects p{
+    padding: 10px 0 0 10px;
+}
+
+.wrapper-projects {
+    display: flex;
+    margin-top: 2rem;
+
+    height: 500px;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    color: var(--dark0);
+}
+
+
+
+/* START CARD 0 */
+.card-project {
+    width: 370px;
+    height: 450px;
+
+    padding: 30px 20px 20px;
+    margin: 0px 10px;
+
+    position: relative;
+    background: var(--white);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 35px;
+
+}
+
+.card-project::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 40%;
+    width: 100%;
+
+    /* background: #241132; */
+    background: var(--dark0);
+    border-radius: 25px 25px 0px 0px;
+}
+
+.content-project {
+    height: 100%;
+    width: 100%;
+
+
+    display: flex;
+    flex-direction: column;
+
+    z-index: 1;
+}
+
+.image-project {
+    height: 240px;
+    width: 240px;
+
+    overflow: hidden;
+    border-radius: 100%;
+
+    border: 4px solid var(--white);
+
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.image-project a img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+
+    object-fit: cover;
+
+    /* border: 2px solid #79397f; */
+    border: 2px solid var(--gold);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition: .6s ease-out;
+    cursor: pointer;
+}
+
+.image-project a img:hover {
+    transform: scale(1.1);
+}
+
+.content-project span {
+    color: var(--dark0);
+    font-weight: bold;
+    font-size: 2rem;
+
+    margin: .75rem auto .5rem auto;
+}
+
+.content-project p {
+    color: var(--dark0);
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 0 .75rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-project {
+    width: 200px;
+    margin: auto auto 15px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cta-project a {
+    padding: 5px 16px;
+    font-size: 1.25rem;
+    font-weight: bold;
+
+    color: var(--dark0);
+    background: var(--gold);
+
+    border-radius: 11px;
+
+    text-decoration: none;
+    transition: opacity .3s ease-in-out;
+}
+
+.cta-project a:hover {
+    opacity: .7;
+}
+
+/* END CARD 0 */
+
+
+
+
+
+
+
+
+/* STAR CARD NUMBER 1 */
+.card-project-1 {
+    width: 370px;
+    height: 450px;
+
+    padding: 30px 20px 20px;
+    margin: 0px 10px;
+
+    position: relative;
+    background: var(--white);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 29px;
+
+}
+
+.card-project-1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 40%;
+    width: 100%;
+
+    /* background: #bedfdf; */
+    background: var(--dark0);
+    border-radius: 25px 25px 0px 0px;
+}
+
+.content-project-1 {
+    height: 100%;
+    width: 100%;
+
+
+    display: flex;
+    flex-direction: column;
+
+    z-index: 1;
+}
+
+.image-project-1 {
+    height: 240px;
+    width: 240px;
+
+    overflow: hidden;
+    border-radius: 100%;
+
+    border: 4px solid var(--white);
+
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.image-project-1 a img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+
+    object-fit: cover;
+
+
+    /* border: 2px solid #748b8b; */
+    border: 2px solid var(--gold);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition: .6s ease-out;
+    cursor: pointer;
+}
+
+.image-project-1 a img:hover {
+    transform: scale(1.1);
+}
+
+.content-project-1 span {
+    color: var(--dark0);
+    font-weight: bold;
+    font-size: 2rem;
+
+    margin: .75rem auto .5rem auto;
+}
+
+.content-project-1 p {
+    color: var(--dark0);
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 0 .75rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-project-1 {
+    width: 200px;
+    margin: auto auto 15px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cta-project-1 a {
+    padding: 5px 16px;
+    font-size: 1.25rem;
+    font-weight: bold;
+
+    color: var(--dark0);
+    background: var(--gold);
+
+    border-radius: 11px;
+
+    text-decoration: none;
+    transition: opacity .3s ease-in-out;
+}
+
+.cta-project-1 a:hover {
+    opacity: .7;
+}
+
+/* END CARD NUMBER 1 */
+
+
+
+
+
+
+
+
+/* STAR CARD NUMBER 1 */
+.card-project-2 {
+    width: 370px;
+    height: 450px;
+
+    padding: 30px 20px 20px;
+    margin: 0px 10px;
+
+    position: relative;
+    background: var(--white);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 35px;
+
+}
+
+.card-project-2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 40%;
+    width: 100%;
+
+    background: var(--dark0);
+    border-radius: 25px 25px 0px 0px;
+}
+
+.content-project-2 {
+    height: 100%;
+    width: 100%;
+
+
+    display: flex;
+    flex-direction: column;
+
+    z-index: 1;
+}
+
+.image-project-2 {
+    height: 240px;
+    width: 240px;
+
+    overflow: hidden;
+    border-radius: 100%;
+
+    border: 4px solid var(--white);
+
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.image-project-2 a img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+
+    object-fit: cover;
+
+
+    /* border: 2px solid #8e2a06; */
+    border: 2px solid var(--gold);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition: .6s ease-out;
+    cursor: pointer;
+}
+
+.image-project-2 a img:hover {
+    transform: scale(1.1);
+}
+
+.content-project-2 span {
+    color: var(--dark0);
+    font-weight: bold;
+    font-size: 2rem;
+
+    margin: .75rem auto .5rem auto;
+}
+
+.content-project-2 p {
+    color: var(--dark0);
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 0 .75rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-project-2 {
+    width: 200px;
+    margin: auto auto 15px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cta-project-2 a {
+    padding: 5px 16px;
+    font-size: 1.25rem;
+    font-weight: bold;
+
+    color: var(--dark0);
+    background: var(--gold);
+
+    border-radius: 11px;
+
+    text-decoration: none;
+    transition: opacity .3s ease-in-out;
+}
+
+.cta-project-2 a:hover {
+    opacity: .7;
+}
+
+/* END CARD NUMBER 2 */

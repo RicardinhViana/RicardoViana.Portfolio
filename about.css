@@ -1,0 +1,185 @@
+:root {
+    --white: #ffffff;
+    --dark0: #000000;
+    --dark1: #0e252b;
+    --dark2: #556a62;
+    --dark3: #7c8c94;
+    --dark4: #89a7b1;
+    --dark5: #cdbad5;
+    --dark6: #091a1d;
+    --cyan1: #60afff;
+    --blue: #527b91;
+    --gold: #e1c122;
+    --gold1: #f8e37b;
+    --gold2: #e1c12238;
+}
+
+
+#about {
+    /* height: 60vh; */
+    height: auto;
+    width: 100%;
+    background: var(--dark0);
+
+    display: flex;
+    color: var(--white);
+}
+
+.background-about {
+    width: 50%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper {
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+}
+
+.img-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    background:
+        linear-gradient(180deg, transparent 20%, var(--dark0)),
+        linear-gradient(90deg, transparent 50%, var(--dark0)),
+        linear-gradient(360deg, transparent 55%, var(--dark0));
+}
+
+.img-wrapper img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.box-about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 50%;
+    
+    padding: 3rem;
+    margin: 6rem 0rem;
+}
+
+.box-about h3 {
+    margin: 3rem;
+    font-size: calc(.8vw + .8rem);
+}
+
+.box-about h3 p {
+    display: inline-block;
+
+    width: fit-content;
+    padding: 2px 4px;
+    border-radius: 5px;
+
+    background: var(--gold);
+    color: var(--dark0);
+}
+
+.box-about h4 {
+    margin: 3rem 3rem;
+    font-size: calc(.8vw + .5rem);
+}
+
+.box-about h4 p {
+    display: inline;
+    padding: 2px 4px;
+}
+
+.box-about h4:nth-child(2) {
+    margin: 2rem 2rem;
+    font-size: 6rem;
+    font-weight: 1.75rem;
+}
+
+.section-subtitle h2 p {
+    display: inline-block;
+    font-size: calc(1.4vw + 1.2rem);
+}
+
+.section-subtitle p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-subtitle h2 p:nth-child(2) span {
+    background: var(--gold);
+    color: var(--dark0);
+
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.button-cta {
+    display: flex;
+
+    max-width: 190px;
+    margin: 4rem 3rem;
+}
+
+.button-cta button {
+    display: inline-block;
+
+    width: 100%;
+    max-width: 172px;
+
+    padding: 10px;
+    margin-bottom: 3rem;
+
+    border-radius: 10px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: .15rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.button-cta button:hover {
+    transform: scale(1.15);
+    filter: brightness(1);
+    color: var(--dark0);
+}
+
+
+@media (max-width: 375px) {
+    .box-about {
+        padding: 1rem
+    }
+
+    .section-subtitle p {
+        font-size: 2rem;
+    }
+
+    .box-about h3 {
+        margin: 2rem 1rem;
+    }
+
+    .box-about h3 p {
+        font-size: calc(.8vw + .9vw);
+    }
+
+    .box-about p {
+        font-size: calc(.5vw + .5vw);
+
+    }
+
+    .box-about h4 {
+        margin: 1rem;
+    }
+}

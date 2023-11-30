@@ -1,0 +1,45 @@
+:root {
+    --white: #ffffff;
+    --dark0: #000000;
+    --dark1: #0e252b;
+    --dark2: #556a62;
+    --dark3: #7c8c94;
+    --dark4: #89a7b1;
+    --dark5: #cdbad5;
+    --dark6: #091a1d;
+    --cyan1: #60afff;
+    --blue: #527b91;
+    --gold: #e1c122;
+    --gold1: #f8e37b;
+    --gold2: #e1c12238;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+
+    color: var(--white);
+    background: var(--dark0);
+
+    filter: brightness(.8);
+
+    transition: all .9s ease;
+}
+
+.container-footer a {
+    margin-bottom: 18px;
+}
+
+.copyright {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--white);
+
+    font-size: 18px;
+    margin-top: auto;
+}
