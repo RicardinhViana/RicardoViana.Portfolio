@@ -112,13 +112,19 @@
 }
 
 .section-subtitle p {
-    display: flex;
+    background: var(--gold);
+    color: var(--dark0);
+
+
+    padding: 3px 5px;
+    border-radius: 5px;
+    
+    display: inline-block;
     align-items: center;
     justify-content: center;
 }
 
 .section-subtitle h2 p:nth-child(2) span {
-    background: var(--gold);
     color: var(--dark0);
 
     padding: 3px 5px;
